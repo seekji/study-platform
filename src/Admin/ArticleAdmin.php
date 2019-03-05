@@ -10,12 +10,6 @@ use Sonata\AdminBundle\Show\ShowMapper;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 
-/**
- * Class ArticleAdmin.
- * Project symfony-next.
- *
- * @author Anton Prokhorov
- */
 class ArticleAdmin extends AbstractAdmin
 {
     /**

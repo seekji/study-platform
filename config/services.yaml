@@ -37,4 +37,4 @@ services:
         class: App\Admin\ArticleAdmin
         arguments: [~, App\Entity\Article, SonataAdminBundle:CRUD]
         tags:
-            - { name: sonata.admin, manager_type: orm, audit: true, group: Article, label: Article }
+            - { name: sonata.admin, manager_type: orm, audit: true, group: Articles, label: Article }
