@@ -9,12 +9,6 @@ use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
-/**
- * Class LoadArticleDataFixture
- * Project skeleton40.
- *
- * @author Anton Prokhorov
- */
 class LoadArticleDataFixture extends AbstractFixture implements ContainerAwareInterface, OrderedFixtureInterface
 {
     /**

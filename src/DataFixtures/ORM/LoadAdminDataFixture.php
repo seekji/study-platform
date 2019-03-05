@@ -10,12 +10,6 @@ use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
-/**
- * Class LoadAdminData.
- * Project symfony-next.
- *
- * @author Anton Prokhorov
- */
 class LoadAdminDataFixture extends AbstractFixture implements FixtureInterface, ContainerAwareInterface, OrderedFixtureInterface
 {
     /**

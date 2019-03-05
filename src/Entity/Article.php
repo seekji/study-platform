@@ -7,8 +7,6 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Class Article.
  *
- * @author Anton Prokhorov
- *
  * @ORM\Entity()
  */
 class Article

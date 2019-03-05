@@ -6,11 +6,6 @@ use Liip\FunctionalTestBundle\Test\WebTestCase;
 use Symfony\Bundle\FrameworkBundle\Client;
 use App\DataFixtures\ORM\LoadAdminDataFixture as FixtureAdmin;
 
-/**
- * Class AdminFunctionalTest.
- * Project symfony-next.
- * @author Anton Prokhorov
- */
 class AdminFunctionalTest extends WebTestCase
 {
     protected static $wasSetup = false;
