@@ -1,5 +1,5 @@
 language: php
-sudo: false
+sudo: true
 
 services:
   - mysql
@@ -37,9 +37,9 @@ install:
   - ./bin/console doctrine:fixtures:load -e test -n
 
 script:
-  - ./vendor/bin/simple-phpunit
   - ./bin/console lint:yaml config
   - ./bin/console lint:twig templates
   - ./bin/console lint:xliff translations
   - ./bin/console security:check
   - ./bin/console doctrine:schema:validate -vvv --no-interaction
+  - ./vendor/bin/simple-phpunit
