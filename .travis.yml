@@ -25,11 +25,10 @@ before_install:
 
 install:
   - composer install
-  - ./bin/phpunit install
-  - bash bin/setup-test.sh
+  - ./bin/setup-test.sh
 
 script:
-  - ./bin/phpunit
+  - ./vendor/bin/simple-phpunit
   - ./bin/console lint:yaml config
   - ./bin/console lint:twig templates
   - ./bin/console lint:xliff translations
