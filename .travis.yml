@@ -11,6 +11,7 @@ cache:
 
 env:
   global:
+    - DB=mysql
     - SYMFONY_PHPUNIT_DIR=./bin/.phpunit
     - SYMFONY_DEPRECATIONS_HELPER=29
 
@@ -21,6 +22,8 @@ matrix:
 #    - php: 7.3
 
 before_install:
+  - cp .env.travis .env
+  - cp .env.travis .env.test
   - composer self-update
   - pear config-set preferred_state beta
   - pecl channel-update pecl.php.net
