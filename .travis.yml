@@ -31,7 +31,10 @@ before_install:
 
 install:
   - composer install
-  - ./bin/setup-test.sh
+  - cp phpunit.xml.dist phpunit.xml
+  - ./bin/console doctrine:database:create -e test --if-not-exists
+  - ./bin/console doctrine:migrations:migrate -e test --no-interaction
+  - ./bin/console doctrine:fixtures:load -e test -n
 
 script:
   - ./vendor/bin/simple-phpunit
